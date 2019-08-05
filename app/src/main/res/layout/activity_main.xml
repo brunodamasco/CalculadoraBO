@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/calculadora"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:padding="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btSoma"
+            android:layout_width="77dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:onClick="soma"
+            android:text="+"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btMultiplicacao"
+            android:layout_width="77dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="93dp"
+            android:onClick="multiplicacao"
+            android:text="X"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btDivisao"
+            android:layout_width="77dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="216dp"
+            android:layout_marginLeft="216dp"
+            android:layout_marginTop="93dp"
+            android:text="/"
+            android:onClick="divisao"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/editN1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="50dp"
+            android:hint="Nº1"
+            android:inputType="number"
+            android:textColorHint="@android:color/white"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/editN2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:hint="Nº2"
+            android:inputType="number"
+            android:textColorHint="@android:color/white"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btSub"
+            android:layout_width="77dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="216dp"
+            android:layout_marginLeft="216dp"
+            android:layout_marginTop="14dp"
+            android:text="-"
+            android:textSize="40sp"
+            android:onClick="subtracao"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lyResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_gravity="center">
+
+    </LinearLayout>
+</LinearLayout>

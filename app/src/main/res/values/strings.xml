@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CalculadoraBO</string>
+    <string name="calculadora">CALCULADORA</string>
+    <string name="erro_n1">Digite um número válido</string>
+    <string name="erro_n2">Digite o nº2 válido</string>
+</resources>
